@@ -2,6 +2,30 @@
 <html>
 <head>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+        });
+    });
+</script>
+
+<style>
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+
 <link rel = "stylesheet" type = "text/css" href = "app.css">
 <title> My First Website </title>
 
@@ -12,7 +36,8 @@
 <p>This is my website.</br>
 I love this song.</br>
 Birth:  1996/08/19.</br></p>
-<div align="center"><iframe width="454" height="280" src="https://www.youtube.com/embed/vJO4Fg_iEss" frameborder="0" allowfullscreen></iframe></div>
+<div>I Love Music</div>
+<div align="center" id="panel"><iframe width="454" height="280" src="https://www.youtube.com/embed/vJO4Fg_iEss" frameborder="0" allowfullscreen></iframe></div>
 
 <a href="https://www.facebook.com/xiaoku.p">
 <div id="fb"><img src="http://img.funtop.tw/2016/05/160514-fb-live-map/fb-live-map_2.png" alt=fb width="60" height="60" align="left" border="0"></a>
